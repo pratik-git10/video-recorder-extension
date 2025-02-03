@@ -6,7 +6,6 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "host_permissions": "https://*/*",
   "background": {
     "service_worker": "service-worker.js"
   },
