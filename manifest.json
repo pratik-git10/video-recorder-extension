@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Video Recorder",
+  "description": "This is an extension for record screen just like loom",
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": "https://*/*",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "offscreen",
+    "tabCapture",
+    "scripting",
+    "desktopCapture"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["camera.html", "camera.js", "video.html", "video.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
